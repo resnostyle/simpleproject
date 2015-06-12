@@ -5,13 +5,17 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: mysql
   pool: 5
   timeout: 5000
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  encoding: utf8
+  database: simpleproject
+  host: 192.168.56.101
+  username: root
+  passowrd: 123
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
