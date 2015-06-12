@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @image_upload.filename %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @image_upload.user_id %>
+</p>
+
+<p>
+  <strong>Timestamp:</strong>
+  <%= @image_upload.timestamp %>
+</p>
+
+<%= link_to 'Edit', edit_image_upload_path(@image_upload) %> |
+<%= link_to 'Back', image_uploads_path %>

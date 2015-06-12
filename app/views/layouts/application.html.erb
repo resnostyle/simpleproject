@@ -7,8 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<h1>SimpleProject</h1>
+<div id="content">
+<%= link_to "Sign up", new_registration_path(resource_name) %>
 <%= yield %>
+
+</div>
 
 </body>
 </html>

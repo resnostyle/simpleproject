@@ -1,0 +1,14 @@
+features:
+
+upload files to s3
+view files in s3
+
+features around image editing
+
+db: image name (filename), compressed,  user upload, timestamp, modified timestamp
+
+
+
+delete in s3
+user admin - add remote users
+basic user functions
