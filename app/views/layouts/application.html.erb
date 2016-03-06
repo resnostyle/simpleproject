@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <title>SimpleProject</title>
+  <title>SimPic</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1>SimpleProject</h1>
-<div id="content">
-<%= link_to "Sign up", new_registration_path(resource_name) %>
+
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">SimPic</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+	   <a href="/users/sign_up"><button type="button" class="btn btn-primary">SignUp</button></a>
+          <a href="/users/sign_in"><button type="button" class="btn btn-default">Login</button></a>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<br><br>
+
+<div class="container">
+
 <%= yield %>
 
 </div>
-
 </body>
 </html>
